@@ -1,0 +1,147 @@
+{
+  "algorithm": "Random Forest",
+  "feature_extraction": "TF-IDF: word 1-2-grams + char_wb 3-5-grams (technical tokens preserved)",
+  "classes": [
+    "Critical",
+    "Normal",
+    "Non-Critical"
+  ],
+  "trained_at_utc": "2026-11-25T06:22:10+00:00",
+  "seed": 42,
+  "n_total": 99,
+  "n_train": 79,
+  "n_test": 20,
+  "class_counts": {
+    "Critical": 40,
+    "Normal": 49,
+    "Non-Critical": 10
+  },
+  "raw_label_counts": {
+    "normal": 49,
+    "critical": 35,
+    "enhancement": 6,
+    "major": 4,
+    "minor": 2,
+    "trivial": 2,
+    "blocker": 1
+  },
+  "cv": {
+    "splits": 5,
+    "repeats": 3,
+    "on": "train split only"
+  },
+  "model_comparison": {
+    "Logistic Regression": {
+      "cv_accuracy_mean": 0.6977777777777778,
+      "cv_accuracy_std": 0.0998594691566449,
+      "cv_macro_f1_mean": 0.5024809868875916,
+      "cv_macro_f1_std": 0.08335420579816681
+    },
+    "Linear SVM": {
+      "cv_accuracy_mean": 0.6977777777777778,
+      "cv_accuracy_std": 0.0998594691566449,
+      "cv_macro_f1_mean": 0.5024809868875916,
+      "cv_macro_f1_std": 0.08335420579816681
+    },
+    "Multinomial Naive Bayes": {
+      "cv_accuracy_mean": 0.6675,
+      "cv_accuracy_std": 0.08996141148045396,
+      "cv_macro_f1_mean": 0.46780495104024516,
+      "cv_macro_f1_std": 0.0646000315260573
+    },
+    "Random Forest": {
+      "cv_accuracy_mean": 0.7522222222222223,
+      "cv_accuracy_std": 0.07837863150465955,
+      "cv_macro_f1_mean": 0.5302989996282049,
+      "cv_macro_f1_std": 0.0531735163173563
+    }
+  },
+  "test_metrics": {
+    "n_samples": 20,
+    "accuracy": 0.8,
+    "macro": {
+      "precision": 0.5714285714285715,
+      "recall": 0.5833333333333334,
+      "f1": 0.5634920634920635
+    },
+    "weighted": {
+      "precision": 0.7571428571428571,
+      "recall": 0.8,
+      "f1": 0.7595238095238095
+    },
+    "per_class": {
+      "Critical": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 8
+      },
+      "Normal": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333334,
+        "support": 10
+      },
+      "Non-Critical": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        2,
+        0
+      ],
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ],
+    "labels": [
+      "Critical",
+      "Normal",
+      "Non-Critical"
+    ],
+    "report_text": "              precision    recall  f1-score   support\n\n    Critical       1.00      0.75      0.86         8\n      Normal       0.71      1.00      0.83        10\nNon-Critical       0.00      0.00      0.00         2\n\n    accuracy                           0.80        20\n   macro avg       0.57      0.58      0.56        20\nweighted avg       0.76      0.80      0.76        20\n"
+  },
+  "majority_baseline": {
+    "class": "Normal",
+    "accuracy": 0.5,
+    "macro_f1": 0.2222222222222222
+  },
+  "versions": {
+    "python": "3.14.6",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.5"
+  },
+  "data_info": {
+    "rows_raw": 99,
+    "dropped_empty_text": 0,
+    "dropped_unknown_label": {},
+    "dropped_duplicates": 0,
+    "rows_used": 99,
+    "raw_label_counts": {
+      "normal": 49,
+      "critical": 35,
+      "enhancement": 6,
+      "major": 4,
+      "minor": 2,
+      "trivial": 2,
+      "blocker": 1
+    },
+    "class_counts": {
+      "Critical": 40,
+      "Normal": 49,
+      "Non-Critical": 10
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source": "https://bugzilla.mozilla.org/rest/bug",
+  "products": [
+    "Core",
+    "Core Graveyard",
+    "Firefox Build System"
+  ],
+  "bug_status": "VERIFIED",
+  "created_from": "2006-01-01",
+  "created_before": "2009-01-01",
+  "retrieved_at_utc": "2026-11-25T07:12:20+00:00",
+  "rows": 4079,
+  "rows_also_in_original_sample": 99,
+  "fields": [
+    "id",
+    "summary",
+    "severity",
+    "type",
+    "status",
+    "resolution",
+    "product",
+    "component",
+    "creation_time"
+  ],
+  "label_rule": "enhancement if type=enhancement and severity=normal, else live severity",
+  "emails_stored": false
+}

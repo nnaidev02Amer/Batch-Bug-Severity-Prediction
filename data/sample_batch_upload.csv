@@ -1,0 +1,16 @@
+bug_id,summary
+365613,[regression] all font-weight are displayed as 'bold' except for the 'normal' keyword and '400'
+365692,getter/setter bytecodes assume number of atoms is less then 64K
+365716,"JS_Assert(char * s = 0x1012279c ""!flbase[flindex]"""
+365837,[FIX]Combobox popups don't have the width of the border-box of the select anymore
+365869,Add a strict warning for when an object literal has two properties with the same name
+365891,"Incorrect error message ""() has no properties"""
+365922,ASSERTION: different number of glyphs/spacing
+365928,"Partly strange font used with this testcase, selecting also is strange"
+366008,Ctrl-click on a word in a text field should select the word on Mac OS X
+366122,large script miscompiles
+366123,compiling long XML filtering predicate hangs
+366200,"Multiple assertions with testcase that removes documentElement and uses DOMNodeRemoved event, including ""ASSERTION: initial containing block already created"""
+366214,Followon for 325906 and some more improvements for JPEG in Cairo
+366216,Add a new Book of Mozilla verse to about:mozilla to celebrate Acid2 compliance
+366233,"""Add contact"" and ""Show all"" in ""Quick Contacts"" is not accessible"
